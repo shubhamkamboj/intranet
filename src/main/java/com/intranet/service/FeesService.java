@@ -14,6 +14,7 @@ public class FeesService {
     private FeesRepository feesRepository;
 
     public Fees createFees(Fees fees) {
+    	fees.setId(null);
         return feesRepository.save(fees);
     }
 

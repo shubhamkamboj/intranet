@@ -14,6 +14,7 @@ public class SectionService {
     private SectionRepository sectionRepository;
 
     public Section createSection(Section section) {
+    	section.setId(null);
         return sectionRepository.save(section);
     }
 

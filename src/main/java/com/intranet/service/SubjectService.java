@@ -14,6 +14,7 @@ public class SubjectService {
     private SubjectRepository subjectRepository;
 
     public Subject createSubject(Subject subject) {
+    	subject.setId(null);
         return subjectRepository.save(subject);
     }
 

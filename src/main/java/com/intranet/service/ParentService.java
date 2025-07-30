@@ -14,6 +14,7 @@ public class ParentService {
     private ParentRepository parentRepository;
 
     public Parent createParent(Parent parent) {
+    	parent.setId(null);
         return parentRepository.save(parent);
     }
 

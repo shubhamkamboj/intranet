@@ -14,6 +14,7 @@ public class TeacherService {
     private TeacherRepository teacherRepository;
 
     public Teacher createTeacher(Teacher teacher) {
+    	teacher.setId(null);
         return teacherRepository.save(teacher);
     }
 

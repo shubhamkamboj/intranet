@@ -15,6 +15,7 @@ public class ClassRoomService  {
     private ClassRoomRepository classRoomRepository;
 
     public ClassRoom createClassRoom(ClassRoom classRoom) {
+    	classRoom.setId(null);
         return classRoomRepository.save(classRoom);
     }
 
