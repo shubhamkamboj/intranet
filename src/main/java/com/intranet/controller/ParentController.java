@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/parents")
+@RequestMapping("/api/parents")
 public class ParentController {
 
     @Autowired
